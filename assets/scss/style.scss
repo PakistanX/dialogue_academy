@@ -16,6 +16,12 @@ body,
 }
 
 .navbar {
+    max-width: 1250px;
+    margin: 0 auto;
+
+    @include media-up(xxl) {
+        max-width: 1500px;
+    }
 
     .navbar-nav {
 
