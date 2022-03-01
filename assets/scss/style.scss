@@ -261,7 +261,7 @@ body,
 
 .dialogue {
     padding: 100px 0 250px;
-    background: #f99929 url(../../assets/images/banner-bg-bottom.png) no-repeat 0 100%;
+    background: #f99929 url(../../assets/images/banner-bg-bottom.png) no-repeat 0 calc(100% + 1px);
     background-size: 100% auto;
 
     .even {
