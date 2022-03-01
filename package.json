@@ -23,12 +23,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/edly-io/edly-wp-theme.git"
+    "url": "https://github.com/PakistanX/dialogue_academy.git"
   },
-  "author": "edly.io",
-  "license": "GPL-2.0",
+  "author": "IlmX",
+  "license": "",
   "bugs": {
-    "url": "https://github.com/edly-io/edly-wp-theme/issues"
+    "url": "https://github.com/PakistanX/dialogue_academy/issues"
   },
-  "homepage": "https://github.com/edly-io/edly-wp-theme#readme"
+  "homepage": "https://github.com/PakistanX/dialogue_academy#readme"
 }
