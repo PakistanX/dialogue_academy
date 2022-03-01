@@ -1,0 +1,25 @@
+//
+// Colors
+//-------------------------------------------------------
+
+$theme-orange:                      #e85c26;
+$theme-yellow:                      #f79929;
+$theme-green:                       #4cbc5b;
+$theme-green2:                      #0ba79a;
+$theme-green-dark:                  #207e2c;
+
+$black:                             #000;
+
+$body-color:                        $black;
+
+$primary:                           $theme-orange;
+$info:                              $theme-green;
+
+$font-family-sans-serif:   'Montserrat Ace', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+
+
+$navbar-light-color:                $black;
+$navbar-light-hover-color:          $theme-green;
+$navbar-light-active-color:         $theme-green;
+$navbar-light-disabled-color:       rgba($black, .3);
+$navbar-light-toggler-border-color: rgba($black, .1);

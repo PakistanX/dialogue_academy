@@ -1,33 +1,13 @@
-
 <!DOCTYPE html>
 <html lang="en">
-
-  <head>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-
-    <title>Dialogue Academy</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-
-    <!-- Additional CSS Files -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/templatemo-chain-app-dev.css">
-    <link rel="stylesheet" href="assets/css/animated.css">
-    <link rel="stylesheet" href="assets/css/owl.css">
-
-  </head>
-
-<body>
-
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dialogue Academy</title>
+  <link rel="stylesheet" href="./build/css/fontawesome.css">
+  <link rel="stylesheet" href="./build/css/style.min.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#mainNavbar" data-bs-offset="400" class="scrollspy-example" tabindex="0">
   <!-- ***** Preloader Start ***** -->
   <div id="js-preloader" class="js-preloader">
     <div class="preloader-inner">
@@ -40,682 +20,450 @@
     </div>
   </div>
   <!-- ***** Preloader End ***** -->
-
-  <!-- ***** Header Area Start ***** -->
-  <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <nav class="main-nav">
-            <!-- ***** Logo Start ***** -->
-            <a href="index.html" class="logo">
-              <img src="assets/images/logo.svg" alt="Dialogue Academy">
-            </a>
-            <!-- ***** Logo End ***** -->
-            <!-- ***** Menu Start ***** -->
-            <ul class="nav">
-              <li class="scroll-to-section"><a href="#top" class="active">Why Dialogue</a></li>
-              <li class="scroll-to-section"><a href="#services">Our Values</a></li>
-              <li class="scroll-to-section"><a href="#about">What you will Gain</a></li>
-              <li class="scroll-to-section"><a href="#pricing">TESTIMONIALS</a></li>
-              <li class="scroll-to-section"><a href="#newsletter">Seeds of Peace</a></li>
-              <li><div class="gradient-button"><a id="modal_trigger" href="#modal"><i class="fa fa-sign-in-alt"></i>Join Now</a></div></li>
-            </ul>        
-            <a class='menu-trigger'>
-                <span>Menu</span>
-            </a>
-            <!-- ***** Menu End ***** -->
-          </nav>
-        </div>
-      </div>
-    </div>
-  </header>
-  <!-- ***** Header Area End ***** -->
-  
-  <div id="modal" class="popupContainer" style="display:none;">
-    <div class="popupHeader">
-        <span class="header_title">Login</span>
-        <span class="modal_close"><i class="fa fa-times"></i></span>
-    </div>
-
-    <section class="popupBody">
-        <!-- Social Login -->
-        <div class="social_login">
-            <div class="">
-                <a href="#" class="social_box fb">
-                    <span class="icon"><i class="fab fa-facebook"></i></span>
-                    <span class="icon_title">Connect with Facebook</span>
-
+  <div class="wrapper">
+    <header id="header">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="https://dialogueacademy.thinkific.com/">
+            <img src="assets/images/logo.svg" alt="Dialogue Academy">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mainNavbar">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#whyDialogue">Why Dialogue</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#ourValues">OUR Values</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#whatYouWillGain">WHAT YOU Will GAIN</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#testimonials">TESTIMONIALS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link external" href="https://www.seedsofpeace.org/" target="_blank">
+                  <span class="text">Seeds of Peace</span>
+                  <i class="fa fa-external-link" aria-hidden="true"></i>
                 </a>
-
-                <a href="#" class="social_box google">
-                    <span class="icon"><i class="fab fa-google-plus"></i></span>
-                    <span class="icon_title">Connect with Google</span>
-                </a>
-            </div>
-
-            <div class="centeredText">
-                <span>Or use your Email address</span>
-            </div>
-
-            <div class="action_btns">
-                <div class="one_half"><a href="#" id="login_form" class="btn">Login</a></div>
-                <div class="one_half last"><a href="#" id="register_form" class="btn">Sign up</a></div>
-            </div>
+              </li>
+              <li class="nav-item join-now-li">
+                <a class="btn btn-outline-info join-now" href="http://dialogueacademy.thinkific.com/">Join Now</a>
+              </li>
+            </ul>
+          </div>
         </div>
-
-        <!-- Username & Password Login form -->
-        <div class="user_login">
-            <form>
-                <label>Email / Username</label>
-                <input type="text" />
-                <br />
-
-                <label>Password</label>
-                <input type="password" />
-                <br />
-
-                <div class="checkbox">
-                    <input id="remember" type="checkbox" />
-                    <label for="remember">Remember me on this computer</label>
-                </div>
-
-                <div class="action_btns">
-                    <div class="one_half"><a href="#" class="btn back_btn"><i class="fa fa-angle-double-left"></i> Back</a></div>
-                    <div class="one_half last"><a href="#" class="btn btn_red">Login</a></div>
-                </div>
-            </form>
-
-            <a href="#" class="forgot_password">Forgot password?</a>
+      </nav>
+    </header>
+    <div class="main">
+    <!-- <div class="main"> -->
+      <section class="main-banner">
+        <div class="frame">
+          <img
+            width="500"
+            src="./assets/images/banner-image.png"
+            class="img-fluid"
+            alt="talk compassionately across lines of difference" />
+          <span class="text-replacement extend-empathy">Extend Empathy</span>
+          <span class="text-replacement feel-heard">Feel Heard</span>
+          <h1><strong>talk compassionately</strong>across lines of difference</h1>
+          <a class="btn btn-info join-now" href="http://dialogueacademy.thinkific.com/">Join Now</a>
         </div>
-
-        <!-- Register Form -->
-        <div class="user_register">
-            <form>
-                <label>Full Name</label>
-                <input type="text" />
-                <br />
-
-                <label>Email Address</label>
-                <input type="email" />
-                <br />
-
-                <label>Password</label>
-                <input type="password" />
-                <br />
-
-                <div class="checkbox">
-                    <input id="send_updates" type="checkbox" />
-                    <label for="send_updates">Send me occasional email updates</label>
-                </div>
-
-                <div class="action_btns">
-                    <div class="one_half"><a href="#" class="btn back_btn"><i class="fa fa-angle-double-left"></i> Back</a></div>
-                    <div class="one_half last"><a href="#" class="btn btn_red">Register</a></div>
-                </div>
-            </form>
+      </section>
+      <section class="dialogue">
+        <div class="header" id="whyDialogue">
+          <h2>
+            <span class="text">
+              <span class="text-normal">WHY</span>
+              <strong>DIALOGUE?</strong>
+            </span>
+          </h2>
         </div>
-    </section>
-</div>
-
-  <div class="main-banner wow fadeIn" id="top" data-wow-duration="1s" data-wow-delay="0.5s">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="row">
-            <div class="col-lg-6 align-self-center">
-              <div class="left-content show-up header-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
-                <div class="row">
-                  <div class="col-lg-12">
-                    <h2>Get The Latest App From App Stores</h2>
-                    <p>Chain App Dev is an app landing page HTML5 template based on Bootstrap v5.1.3 CSS layout provided by TemplateMo, a great website to download free CSS templates.</p>
-                  </div>
-                  <div class="col-lg-12">
-                    <div class="white-button first-button scroll-to-section">
-                      <a href="#contact">Free Quote <i class="fab fa-apple"></i></a>
-                    </div>
-                    <div class="white-button scroll-to-section">
-                      <a href="#contact">Free Quote <i class="fab fa-google-play"></i></a>
-                    </div>
-                  </div>
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col">
+              <div class="dialogue-1 text-block">
+                <div class="text">
+                  <p>The world needs to teach its future generations how to engage with differences.</p>
                 </div>
               </div>
             </div>
-            <div class="col-lg-6">
-              <div class="right-image wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
-                <img src="assets/images/slider-dec.png" alt="">
+            <div class="col image-block">
+              <img class="img-fluid" src="assets/images/dialogue-1.png" alt="">
+            </div>
+          </div>
+          <div class="row align-items-center even">
+            <div class="col">
+              <div class="dialogue-2 text-block">
+                <div class="text">
+                  <p>Safe spaces to listen, learn, and grow will equip youth to hold multiple truths and perspectives simultaneously.</p>
+                </div>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div id="services" class="services section">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 offset-lg-2">
-          <div class="section-heading  wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
-            <h4>Amazing <em>Services &amp; Features</em> for you</h4>
-            <img src="assets/images/heading-line-dec.png" alt="">
-            <p>If you need the greatest collection of HTML templates for your business, please visit <a rel="nofollow" href="https://www.toocss.com/" target="_blank">TooCSS</a> Blog. If you need to have a contact form PHP script, go to <a href="https://templatemo.com/contact" target="_parent">our contact page</a> for more information.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-3">
-          <div class="service-item first-service">
-            <div class="icon"></div>
-            <h4>App Maintenance</h4>
-            <p>You are not allowed to redistribute this template ZIP file on any other website.</p>
-            <div class="text-button">
-              <a href="#">Read More <i class="fa fa-arrow-right"></i></a>
+            <div class="col image-block">
+              <img width="350" src="assets/images/dialogue-2.png" alt="">
             </div>
           </div>
-        </div>
-        <div class="col-lg-3">
-          <div class="service-item second-service">
-            <div class="icon"></div>
-            <h4>Rocket Speed of App</h4>
-            <p>You are allowed to use the Chain App Dev HTML template. Feel free to modify or edit this layout.</p>
-            <div class="text-button">
-              <a href="#">Read More <i class="fa fa-arrow-right"></i></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3">
-          <div class="service-item third-service">
-            <div class="icon"></div>
-            <h4>Multi Workflow Idea</h4>
-            <p>If this template is beneficial for your work, please support us <a rel="nofollow" href="https://paypal.me/templatemo" target="_blank">a little via PayPal</a>. Thank you.</p>
-            <div class="text-button">
-              <a href="#">Read More <i class="fa fa-arrow-right"></i></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3">
-          <div class="service-item fourth-service">
-            <div class="icon"></div>
-            <h4>24/7 Help &amp; Support</h4>
-            <p>Lorem ipsum dolor consectetur adipiscing elit sedder williamsburg photo booth quinoa and fashion axe.</p>
-            <div class="text-button">
-              <a href="#">Read More <i class="fa fa-arrow-right"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div id="about" class="about-us section">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 align-self-center">
-          <div class="section-heading">
-            <h4>About <em>What We Do</em> &amp; Who We Are</h4>
-            <img src="assets/images/heading-line-dec.png" alt="">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eismod tempor incididunt ut labore et dolore magna.</p>
-          </div>
-          <div class="row">
-            <div class="col-lg-6">
-              <div class="box-item">
-                <h4><a href="#">Maintance Problems</a></h4>
-                <p>Lorem Ipsum Text</p>
+          <div class="row align-items-end">
+            <div class="col">
+              <div class="dialogue-3 text-block">
+                <div class="text">
+                  <p>Youth equipped with the ability to engage in dialogue would end cycles of intolerance and violence.</p>
+                </div>
               </div>
             </div>
-            <div class="col-lg-6">
-              <div class="box-item">
-                <h4><a href="#">24/7 Support &amp; Help</a></h4>
-                <p>Lorem Ipsum Text</p>
-              </div>
-            </div>
-            <div class="col-lg-6">
-              <div class="box-item">
-                <h4><a href="#">Fixing Issues About</a></h4>
-                <p>Lorem Ipsum Text</p>
-              </div>
-            </div>
-            <div class="col-lg-6">
-              <div class="box-item">
-                <h4><a href="#">Co. Development</a></h4>
-                <p>Lorem Ipsum Text</p>
-              </div>
-            </div>
-            <div class="col-lg-12">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eismod tempor idunte ut labore et dolore adipiscing  magna.</p>
-              <div class="gradient-button">
-                <a href="#">Start 14-Day Free Trial</a>
-              </div>
-              <span>*No Credit Card Required</span>
+            <div class="col image-block">
+              <img class="img-fluid" src="assets/images/dialogue-3.png" alt="">
             </div>
           </div>
         </div>
-        <div class="col-lg-6">
-          <div class="right-image">
-            <img src="assets/images/about-right-dec.png" alt="">
-          </div>
+      </section>
+      <section class="values">
+        <div class="header" id="ourValues">
+          <h2>
+            <span class="text"><strong>Values</strong></span>
+          </h2>
         </div>
-      </div>
-    </div>
-  </div>
-
-  <div id="clients" class="the-clients">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 offset-lg-2">
-          <div class="section-heading">
-            <h4>Check What <em>The Clients Say</em> About Our App Dev</h4>
-            <img src="assets/images/heading-line-dec.png" alt="">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eismod tempor incididunt ut labore et dolore magna.</p>
-          </div>
-        </div>
-        <div class="col-lg-12">
-          <div class="naccs">
-            <div class="grid">
-              <div class="row">
-                <div class="col-lg-7 align-self-center">
-                  <div class="menu">
-                    <div class="first-thumb active">
-                      <div class="thumb">
-                        <div class="row">
-                          <div class="col-lg-4 col-sm-4 col-12">
-                            <h4>David Martino Co</h4>
-                            <span class="date">30 November 2021</span>
-                          </div>
-                          <div class="col-lg-4 col-sm-4 d-none d-sm-block">
-                            <span class="category">Financial Apps</span>
-                          </div>
-                          <div class="col-lg-4 col-sm-4 col-12">
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star"></i>
-                              <span class="rating">4.8</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div>
-                      <div class="thumb">
-                        <div class="row">
-                          <div class="col-lg-4 col-sm-4 col-12">
-                            <h4>Jake Harris Nyo</h4>
-                            <span class="date">29 November 2021</span>
-                          </div>
-                          <div class="col-lg-4 col-sm-4 d-none d-sm-block">
-                            <span class="category">Digital Business</span>
-                          </div>
-                          <div class="col-lg-4 col-sm-4 col-12">
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star"></i>
-                              <span class="rating">4.5</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div>
-                      <div class="thumb">
-                        <div class="row">
-                          <div class="col-lg-4 col-sm-4 col-12">
-                            <h4>May Catherina</h4>
-                            <span class="date">27 November 2021</span>
-                          </div>
-                          <div class="col-lg-4 col-sm-4 d-none d-sm-block">
-                            <span class="category">Business &amp; Economics</span>
-                          </div>
-                          <div class="col-lg-4 col-sm-4 col-12">
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star"></i>
-                              <span class="rating">4.7</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div>
-                      <div class="thumb">
-                        <div class="row">
-                          <div class="col-lg-4 col-sm-4 col-12">
-                            <h4>Random User</h4>
-                            <span class="date">24 November 2021</span>
-                          </div>
-                          <div class="col-lg-4 col-sm-4 d-none d-sm-block">
-                            <span class="category">New App Ecosystem</span>
-                          </div>
-                          <div class="col-lg-4 col-sm-4 col-12">
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star"></i>
-                              <span class="rating">3.9</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="last-thumb">
-                      <div class="thumb">
-                        <div class="row">
-                          <div class="col-lg-4 col-sm-4 col-12">
-                            <h4>Mark Amber Do</h4>
-                            <span class="date">21 November 2021</span>
-                          </div>
-                          <div class="col-lg-4 col-sm-4 d-none d-sm-block">
-                            <span class="category">Web Development</span>
-                          </div>
-                          <div class="col-lg-4 col-sm-4 col-12">
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star"></i>
-                              <span class="rating">4.3</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div> 
-                <div class="col-lg-5">
-                  <ul class="nacc">
-                    <li class="active">
-                      <div>
-                        <div class="thumb">
-                          <div class="row">
-                            <div class="col-lg-12">
-                              <div class="client-content">
-                                <img src="assets/images/quote.png" alt="">
-                                <p>“Lorem ipsum dolor sit amet, consectetur adpiscing elit, sed do eismod tempor idunte ut labore et dolore magna aliqua darwin kengan
-                                  lorem ipsum dolor sit amet, consectetur picing elit massive big blasta.”</p>
-                              </div>
-                              <div class="down-content">
-                                <img src="assets/images/client-image.jpg" alt="">
-                                <div class="right-content">
-                                  <h4>David Martino</h4>
-                                  <span>CEO of David Company</span>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div>
-                        <div class="thumb">
-                          <div class="row">
-                            <div class="col-lg-12">
-                              <div class="client-content">
-                                <img src="assets/images/quote.png" alt="">
-                                <p>“CTO, Lorem ipsum dolor sit amet, consectetur adpiscing elit, sed do eismod tempor idunte ut labore et dolore magna aliqua darwin kengan
-                                  lorem ipsum dolor sit amet, consectetur picing elit massive big blasta.”</p>
-                              </div>
-                              <div class="down-content">
-                                <img src="assets/images/client-image.jpg" alt="">
-                                <div class="right-content">
-                                  <h4>Jake H. Nyo</h4>
-                                  <span>CTO of Digital Company</span>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div>
-                        <div class="thumb">
-                          <div class="row">
-                            <div class="col-lg-12">
-                              <div class="client-content">
-                                <img src="assets/images/quote.png" alt="">
-                                <p>“May, Lorem ipsum dolor sit amet, consectetur adpiscing elit, sed do eismod tempor idunte ut labore et dolore magna aliqua darwin kengan
-                                  lorem ipsum dolor sit amet, consectetur picing elit massive big blasta.”</p>
-                              </div>
-                              <div class="down-content">
-                                <img src="assets/images/client-image.jpg" alt="">
-                                <div class="right-content">
-                                  <h4>May C.</h4>
-                                  <span>Founder of Catherina Co.</span>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div>
-                        <div class="thumb">
-                          <div class="row">
-                            <div class="col-lg-12">
-                              <div class="client-content">
-                                <img src="assets/images/quote.png" alt="">
-                                <p>“Lorem ipsum dolor sit amet, consectetur adpiscing elit, sed do eismod tempor idunte ut labore et dolore magna aliqua darwin kengan
-                                  lorem ipsum dolor sit amet, consectetur picing elit massive big blasta.”</p>
-                              </div>
-                              <div class="down-content">
-                                <img src="assets/images/client-image.jpg" alt="">
-                                <div class="right-content">
-                                  <h4>Random Staff</h4>
-                                  <span>Manager, Digital Company</span>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div>
-                        <div class="thumb">
-                          <div class="row">
-                            <div class="col-lg-12">
-                              <div class="client-content">
-                                <img src="assets/images/quote.png" alt="">
-                                <p>“Mark, Lorem ipsum dolor sit amet, consectetur adpiscing elit, sed do eismod tempor idunte ut labore et dolore magna aliqua darwin kengan
-                                  lorem ipsum dolor sit amet, consectetur picing elit massive big blasta.”</p>
-                              </div>
-                              <div class="down-content">
-                                <img src="assets/images/client-image.jpg" alt="">
-                                <div class="right-content">
-                                  <h4>Mark Am</h4>
-                                  <span>CTO, Amber Do Company</span>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
+        <div class="container">
+          <div class="row align-items-center even">
+            <div class="col-6">
+              <div class="text-block">
+                <div class="text">
+                  <span class="text-replacement text-values">Our values are at the heart of what we do we value...</span>
+                  <ul class="values-list">
+                    <li>Respect</li>
+                    <li>Courage</li>
+                    <li>Initiative</li>
+                    <li>Engagement</li>
+                    <li>Critical Thinking</li>
                   </ul>
-                </div>          
+                </div>
+              </div>
+            </div>
+            <div class="col-6 image-block">
+              <img class="img-fluid" src="assets/images/img-values.png" alt="">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col text-center">
+              <a class="btn btn-info join-now" href="http://dialogueacademy.thinkific.com/">Join Now</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="start-journey">
+        <div class="header">
+          <h2>
+            <span class="text">
+              <strong>Begin your Journey</strong>
+              <span class="text-normal">with Dialogue Academy</span>
+            </span>
+          </h2>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-8">&nbsp;</div>
+            <div class="col-4">
+              <img class="img-fluid" src="assets/images/img-journey.png" alt="">
+            </div>
+          </div>
+          <div class="row partners-school">
+            <div class="col-6 image-block">
+              <img class="img-fluid" src="assets/images/img-journey-2.png" alt="">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-4">&nbsp;</div>
+            <div class="col-8">
+              <img class="img-fluid" src="assets/images/img-journey-3.png" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="continue-journey">
+        <div class="header">
+          <h2>
+            <span class="text">
+              <strong>your JourneY</strong>
+              <span class="text-normal">with us</span>
+            </span>
+          </h2>
+        </div>
+        <div class="frame">
+          <img class="img-fluid" src="assets/images/img-journey-with-us.png" alt="">
+        </div>
+        <div class="row">
+          <div class="col text-center">
+            <a class="btn btn-info join-now" href="http://dialogueacademy.thinkific.com/">Join Now</a>
+          </div>
+        </div>
+      </section>
+      <section class="you-will-gain">
+        <div class="header" id="whatYouWillGain">
+          <h2>
+            <span class="text">
+              <span class="text-normal">What you will</span>
+              <strong>GAIN?</strong>
+            </span>
+          </h2>
+        </div>
+        <div class="container">
+          <div class="row justify-content-md-center">
+            <div class="col-md-3">
+              <div class="gain-box">
+                <img class="img-fluid" src="assets/images/img-gain-01.png" alt="">
+                <p>University application benefit</p>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-between">
+            <div class="col-sm-5 col-md-3">
+              <div class="gain-box">
+                <img class="img-fluid" src="assets/images/img-gain-02.png" alt="">
+                <p>Priority in selection processes for <strong>Seeds of Peace</strong> national & international programs</p>
+              </div>
+            </div>
+            <div class="col-sm-5 col-md-3">
+              <div class="gain-box">
+                <img class="img-fluid" src="assets/images/img-gain-03.png" alt="">
+                <p>Strong relationships across lines of conflict</p>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-evenly">
+            <div class="col-sm-5 col-md-3">
+              <div class="gain-box">
+                <img class="img-fluid" src="assets/images/img-gain-04.png" alt="">
+                <p>Critical thinking and communication skills</p>
+              </div>
+            </div>
+            <div class="col-sm-5 col-md-3">
+              <div class="gain-box">
+                <img class="img-fluid" src="assets/images/img-gain-05.png" alt="">
+                <p>Understanding conflict & ability to take action</p>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
+      <section class="time-and-commitment">
+        <div class="header">
+          <h2>
+            <span class="text"><strong>Time and commitment</strong></span>
+          </h2>
+        </div>
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col col-md-6">
+              <span class="text-replacement text-time-commitment">You only need a few hours every week to learn how to be better at dialogue!</span>
+              <ul class="values-list">
+                <li>10 to 12 hours per course</li>
+                <li> 3 to 4 hours engagement/week</li>
+              </ul>
+            </div>
+            <div class="col col-md-6">
+              <div class="image-block">
+                <img class="img-fluid" src="assets/images/img-clock.png" alt="You only need a few hours every week to learn how to be better at dialogue!">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="testimonials">
+        <div class="header" id="testimonials">
+          <h2>
+            <span class="text"><strong>Testimonials</strong></span>
+          </h2>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div id="carouselTestimonials" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+
+                  <div class="carousel-item active">
+                    <div class="carousel-slide">
+                      <div class="info-block">
+                        <div class="img-block">
+                          <img src="assets/images/img-shumaq.png" alt="Shumaq Shoaib">
+                        </div>
+                        <h3>Shumaq Shoaib</h3>
+                        <span class="role">Participant</span>
+                      </div>
+                      <blockquote>
+                        <q>Journey of un-learning and re-learning starts with Dialogue</q>
+                      </blockquote>
+                    </div>
+                  </div>
+
+                  <div class="carousel-item">
+                    <div class="carousel-slide">
+                      <div class="info-block">
+                        <div class="img-block">
+                          <img src="assets/images/img-razam.png" alt="Razam">
+                        </div>
+                        <h3>Razam</h3>
+                        <span class="role">Participant</span>
+                      </div>
+                      <blockquote>
+                        <q>Dialogue is the difference between listening to respond and listening to understand</q>
+                      </blockquote>
+                    </div>
+                  </div>
+
+                  <div class="carousel-item">
+                    <div class="carousel-slide">
+                      <div class="info-block">
+                        <div class="img-block">
+                          <img src="assets/images/img-areesha.png" alt="Areesha Aziz Tarar">
+                        </div>
+                        <h3>Areesha Aziz Tarar</h3>
+                        <span class="role">Participant</span>
+                      </div>
+                      <blockquote>
+                        <q>Pakistan is an amalgamation of people with their own cultures, traditions, and modes of life. Dialogue can bring the unity that we as a nation need in this age of differences</q>
+                      </blockquote>
+                    </div>
+                  </div>
+
+                  <div class="carousel-item">
+                    <div class="carousel-slide">
+                      <div class="info-block">
+                        <div class="img-block">
+                          <img src="assets/images/img-myda.png" alt="Myda Majeed">
+                        </div>
+                        <h3>Myda Majeed</h3>
+                        <span class="role">Participant</span>
+                      </div>
+                      <blockquote>
+                        <q>Dialogue teaches one to listen, synthesize and grow rather than react to the discomfort of their values being challenged by different beliefs</q>
+                      </blockquote>
+                    </div>
+                  </div>
+
+                  <div class="carousel-item">
+                    <div class="carousel-slide">
+                      <div class="info-block">
+                        <div class="img-block">
+                          <img src="assets/images/img-noor.png" alt="Noor Jehan Ahmad">
+                        </div>
+                        <h3>Noor Jehan Ahmad</h3>
+                        <span class="role">Participant</span>
+                      </div>
+                      <blockquote>
+                        <q>Dialogue is much like a mirror in front of me-it causes me to unveil what triggers me, teaches me about the origin of my insecurities, and yet it also helps me realise my individual greatness too.</q>
+                      </blockquote>
+                    </div>
+                  </div>
+
+                  <div class="carousel-item">
+                    <div class="carousel-slide">
+                      <div class="info-block">
+                        <div class="img-block">
+                          <img src="assets/images/img-ganji.png" alt="Ganji Ali">
+                        </div>
+                        <h3>Ganji Ali</h3>
+                        <span class="role">Participant</span>
+                      </div>
+                      <blockquote>
+                        <q>A dialogue is a platform where you engage to spot different community based issues and speak the words of numerous narratives for the evolution of the community.</q>
+                      </blockquote>
+                    </div>
+                  </div>
+
+                  <div class="carousel-item">
+                    <div class="carousel-slide">
+                      <div class="info-block">
+                        <div class="img-block">
+                          <img src="assets/images/img-hassan.png" alt="Hassan Butt">
+                        </div>
+                        <h3>Hassan Butt</h3>
+                        <span class="role">Participant</span>
+                      </div>
+                      <blockquote>
+                        <q>Dialogue is all about delibartion; it allows for individual freedom to be coupled with the shared responsibility.</q>
+                      </blockquote>
+                    </div>
+                  </div>
+
+                  <div class="carousel-item">
+                    <div class="carousel-slide">
+                      <div class="info-block">
+                        <div class="img-block">
+                          <img src="assets/images/img-gaurav.png" alt="Gaurav Dev">
+                        </div>
+                        <h3>Gaurav Dev</h3>
+                        <span class="role">Participant</span>
+                      </div>
+                      <blockquote>
+                        <q>Dialogue allows you to embrace diverse identities or mindsets and helps you in co-existing with them.</q>
+                      </blockquote>
+                    </div>
+                  </div>
+
+                  <div class="carousel-item">
+                    <div class="carousel-slide">
+                      <div class="info-block">
+                        <div class="img-block">
+                          <img src="assets/images/img-hiba.png" alt="Hiba Ahmed">
+                        </div>
+                        <h3>Hiba Ahmed</h3>
+                        <span class="role">Participant</span>
+                      </div>
+                      <blockquote>
+                        <q>Dialogue extends our knowledge to areas we know nothing about and equip us to understand problems we face as a community.</q>
+                      </blockquote>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselTestimonials" data-bs-slide="prev">
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselTestimonials" data-bs-slide="next">
+                  <span class="visually-hidden">Next</span>
+                </button>
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselTestimonials" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselTestimonials" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselTestimonials" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselTestimonials" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                  <button type="button" data-bs-target="#carouselTestimonials" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                  <button type="button" data-bs-target="#carouselTestimonials" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                  <button type="button" data-bs-target="#carouselTestimonials" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                  <button type="button" data-bs-target="#carouselTestimonials" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                  <button type="button" data-bs-target="#carouselTestimonials" data-bs-slide-to="8" aria-label="Slide 9"></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
+    <footer id="footer">
+      <div class="footer-wrapper">
+        <a class="logo" href="https://dialogueacademy.thinkific.com/">
+          <img class="img-fluid" src="assets/images/logo-footer.png" alt="Seeds of Peace">
+        </a>
+        <ul class="footer-list">
+          <li>
+            <a href="https://www.seedsofpeace.org/" target="_blank">
+              <span class="text">Seeds of Peace</span>
+              <i class="fa fa-external-link" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li>
+            <strong><a href="mailto:dialogueacademy@seedsofpeace.org">dialogueacademy@seedsofpeace.org</a></strong>
+          </li>
+          <li>&copy; All Rights Reserved | <a href="https://dialogueacademy.thinkific.com/">Dialogue Academy</a><sup>TM</sup> 2021</li>
+        </ul>
+      </div>
+    </footer>
   </div>
-
-  <div id="pricing" class="pricing-tables">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 offset-lg-2">
-          <div class="section-heading">
-            <h4>We Have The Best Pre-Order <em>Prices</em> You Can Get</h4>
-            <img src="assets/images/heading-line-dec.png" alt="">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eismod tempor incididunt ut labore et dolore magna.</p>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="pricing-item-regular">
-            <span class="price">$12</span>
-            <h4>Standard Plan App</h4>
-            <div class="icon">
-              <img src="assets/images/pricing-table-01.png" alt="">
-            </div>
-            <ul>
-              <li>Lorem Ipsum Dolores</li>
-              <li>20 TB of Storage</li>
-              <li class="non-function">Life-time Support</li>
-              <li class="non-function">Premium Add-Ons</li>
-              <li class="non-function">Fastest Network</li>
-              <li class="non-function">More Options</li>
-            </ul>
-            <div class="border-button">
-              <a href="#">Purchase This Plan Now</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="pricing-item-pro">
-            <span class="price">$25</span>
-            <h4>Business Plan App</h4>
-            <div class="icon">
-              <img src="assets/images/pricing-table-01.png" alt="">
-            </div>
-            <ul>
-              <li>Lorem Ipsum Dolores</li>
-              <li>50 TB of Storage</li>
-              <li>Life-time Support</li>
-              <li>Premium Add-Ons</li>
-              <li class="non-function">Fastest Network</li>
-              <li class="non-function">More Options</li>
-            </ul>
-            <div class="border-button">
-              <a href="#">Purchase This Plan Now</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="pricing-item-regular">
-            <span class="price">$66</span>
-            <h4>Premium Plan App</h4>
-            <div class="icon">
-              <img src="assets/images/pricing-table-01.png" alt="">
-            </div>
-            <ul>
-              <li>Lorem Ipsum Dolores</li>
-              <li>120 TB of Storage</li>
-              <li>Life-time Support</li>
-              <li>Premium Add-Ons</li>
-              <li>Fastest Network</li>
-              <li>More Options</li>
-            </ul>
-            <div class="border-button">
-              <a href="#">Purchase This Plan Now</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div> 
-
-  <footer id="newsletter">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 offset-lg-2">
-          <div class="section-heading">
-            <h4>Join our mailing list to receive the news &amp; latest trends</h4>
-          </div>
-        </div>
-        <div class="col-lg-6 offset-lg-3">
-          <form id="search" action="#" method="GET">
-            <div class="row">
-              <div class="col-lg-6 col-sm-6">
-                <fieldset>
-                  <input type="address" name="address" class="email" placeholder="Email Address..." autocomplete="on" required>
-                </fieldset>
-              </div>
-              <div class="col-lg-6 col-sm-6">
-                <fieldset>
-                  <button type="submit" class="main-button">Subscribe Now <i class="fa fa-angle-right"></i></button>
-                </fieldset>
-              </div>
-            </div>
-          </form>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-3">
-          <div class="footer-widget">
-            <h4>Contact Us</h4>
-            <p>Rio de Janeiro - RJ, 22795-008, Brazil</p>
-            <p><a href="#">010-020-0340</a></p>
-            <p><a href="#">info@company.co</a></p>
-          </div>
-        </div>
-        <div class="col-lg-3">
-          <div class="footer-widget">
-            <h4>About Us</h4>
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Testimonials</a></li>
-              <li><a href="#">Pricing</a></li>
-            </ul>
-            <ul>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Testimonials</a></li>
-              <li><a href="#">Pricing</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-lg-3">
-          <div class="footer-widget">
-            <h4>Useful Links</h4>
-            <ul>
-              <li><a href="#">Free Apps</a></li>
-              <li><a href="#">App Engine</a></li>
-              <li><a href="#">Programming</a></li>
-              <li><a href="#">Development</a></li>
-              <li><a href="#">App News</a></li>
-            </ul>
-            <ul>
-              <li><a href="#">App Dev Team</a></li>
-              <li><a href="#">Digital Web</a></li>
-              <li><a href="#">Normal Apps</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-lg-3">
-          <div class="footer-widget">
-            <h4>About Our Company</h4>
-            <div class="logo">
-              <img src="assets/images/white-logo.png" alt="">
-            </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-          </div>
-        </div>
-        <div class="col-lg-12">
-          <div class="copyright-text">
-            <p>Copyright © 2022 Chain App Dev Company. All Rights Reserved. 
-          <br>Design: <a href="https://templatemo.com/" target="_blank" title="css templates">TemplateMo</a></p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-
-  <!-- Scripts -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/js/owl-carousel.js"></script>
-  <script src="assets/js/animation.js"></script>
-  <script src="assets/js/imagesloaded.js"></script>
-  <script src="assets/js/popup.js"></script>
-  <script src="assets/js/custom.js"></script>
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
