@@ -58,15 +58,17 @@
     &.text-values {
         background-image: url(../../assets/images/text-values.png);
         max-width: 440px;
-        height: 160px;
         width: auto;
         margin: 0 auto 50px;
+        padding-top: 27%;
+        height: auto;
     }
 
     &.text-time-commitment {
         background-image: url(../../assets/images/text-time-commitment.png);
         width: 100%;
-        height: 185px;
+        padding-top: 29%;
+        height: auto;
         margin-bottom: 50px;
     }
 }

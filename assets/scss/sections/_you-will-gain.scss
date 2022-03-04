@@ -1,26 +1,97 @@
 .you-will-gain {
     background: #f99929;
     padding-bottom: 1px;
+    position: relative;
+
+     &:before {
+         content: '';
+         position: absolute;
+         bottom: 0;
+         left: 0;
+         height: 160px;
+         pointer-events: none;
+         background: url(../../assets/images/bg-gain-3.png) no-repeat;
+         background-size: 100% auto;
+         width: 95px;
+     }
+
+     .row {
+         position: relative;
+         z-index: 1;
+     }
 
     .gain-box {
-        text-align: center;
-        padding: 0 0 30px;
+      text-align: center;
+      padding: 0 0 30px;
 
-         @include media-up(md) {
-            font-size: 18px;
+      @include media-up(md) {
+         font-size: 18px;
+      }
+
+      @include media-up(lg) {
+         font-size: 20px;
+      }
+
+      @include media-up(xl) {
+         font-size: 22px;
+      }
+
+      @include media-up(xxl) {
+         font-size: 24px;
+         padding: 0 15px 60px;
+      }
+    }
+
+
+    .container {
+
+        &:after,
+        &:before {
+            content: '';
+            position: absolute;
+            top: -4%;
+            left: 0;
+            height: 304px;
+            width: 8%;
+            pointer-events: none;
+            background: url(../../assets/images/bg-gain-1.png) no-repeat;
+            background-size: 100% auto;
+            max-width: 95px;
+
+            @include media-up(sm) {
+               top: -7%;
+               width: 8%;
+            }
+
+            @include media-up(md) {
+               width: 6.5%;
+            }
+
+            @include media-up(lg) {
+               width: 5%;
+            }
         }
 
-         @include media-up(lg) {
-            font-size: 20px;
-        }
+        &:after {
+            background-image: url(../../assets/images/bg-gain-2.png);
+            max-width: 90px;
+            top: 60%;
+            left: auto;
+            right: 0;
+            z-index: 1;
+            width: 11%;
 
-         @include media-up(xl) {
-            font-size: 22px;
-        }
+            @include media-up(sm) {
+                width: 7%;
+            }
 
-         @include media-up(xxl) {
-            font-size: 24px;
-            padding: 0 15px 60px;
+            @include media-up(md) {
+                width: 10%;
+            }
+
+            @include media-up(xl) {
+                width: 13%;
+            }
         }
     }
 

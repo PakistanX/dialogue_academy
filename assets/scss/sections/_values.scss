@@ -1,23 +1,101 @@
 .values {
-    padding: 20px 0 150px;
-    background: $theme-offwhite;
+    padding: 20px 0 50px;
     position: relative;
+    background: $theme-offwhite;
 
-    &:before {
-        content: '';
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        top: -1px;
-        left: 0;
-        pointer-events: none;
-        background: url(../../assets/images/banner-bg-bottom.png) no-repeat;
-        background-size: 100% auto;
+    @include media-up(lg) {
+        padding: 20px 0 100px;
     }
 
-    > * {
-        position: relative;
+    @include media-up(xl) {
+        padding: 20px 0 150px;
+    }
+
+    .container {
+
+        &:after,
+        &:before {
+            content: '';
+            position: absolute;
+            top: -1px;
+            left: 0;
+            height: 304px;
+            width: 100%;
+            background: url(../../assets/images/banner-bg-bottom.png) no-repeat;
+            background-size: 100% auto;
+        }
+
+        &:after {
+            background-image: url(../../assets/images/value-bg-3.png);
+            max-width: 90px;
+            top: 84%;
+            z-index: 1;
+            width: 11%;
+
+            @include media-up(sm) {
+                width: 7%;
+            }
+
+            @include media-up(md) {
+                width: 10%;
+            }
+
+            @include media-up(xl) {
+                width: 13%;
+            }
+        }
+    }
+
+    &:after,
+    &:before {
+        content: '';
+        background: url(../../assets/images/value-bg-1.png) no-repeat;
+        background-size: 100% auto;
+        position: absolute;
+        height: 245px;
+        width: 30%;
+        top: 0;
+        left: 0;
+        max-width: 260px;
+        pointer-events: none;
         z-index: 1;
+
+        @include media-up(sm) {
+            width: 20%;
+        }
+
+        @include media-up(md) {
+            width: 13%;
+        }
+    }
+
+    &:after {
+        background-image: url(../../assets/images/value-bg-2.png);
+        height: 299px;
+        width: 12%;
+        top: 2%;
+        left: auto;
+        right: 0;
+        max-width: 100px;
+        pointer-events: none;
+
+        @include media-up(xs) {
+            top: 4%;
+        }
+
+        @include media-up(sm) {
+            width: 8%;
+            top: 11%;
+        }
+
+        @include media-up(lg) {
+            width: 6%;
+            top: 11%;
+        }
+
+        @include media-up(xl) {
+            top: 16%;
+        }
     }
 
     .text-block {

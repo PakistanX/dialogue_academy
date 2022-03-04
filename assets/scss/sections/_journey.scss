@@ -1,6 +1,12 @@
 .start-journey {
-    background: #0ba699;
+    background: #0ba699 url(../../assets/images/bg-journey-center.png) no-repeat 0 50%;
+    background-size: 50% auto;
     position: relative;
+
+    @include media-up(sm) {
+        background-position: 0 31%;
+        background-size: 30% auto;
+    }
 
     &:before {
         content: '';
@@ -15,15 +21,35 @@
     }
 
     .header {
-        margin-bottom: 150px;
+        margin-bottom: 50px;
+
+        @include media-up(xl) {
+            margin-bottom: 75px;
+        }
 
         @include media-up(xxl) {
-            margin-bottom: 200px;
+            margin-bottom: 100px;
         }
     }
 
     .partners-school {
-        margin: -200px 0 -300px;
+        margin: 0 0 -50px;
+
+        @include media-up(sm) {
+            margin: -150px 0 -100px;
+        }
+
+        @include media-up(md) {
+            margin: -200px 0;
+        }
+
+        @include media-up(lg) {
+            margin: -200px 0 -250px;
+        }
+
+        @include media-up(xxl) {
+            margin: -275px 0 -230px;
+        }
     }
 }
 
@@ -36,6 +62,15 @@
         padding: 50px 0 100px;
     }
 
+    @include media-up(lg) {
+        padding: 100px 0;
+    }
+
+    @include media-up(xxl) {
+        padding: 150px 0 100px;
+    }
+
+    &:after,
     &:before {
         content: '';
         position: absolute;
@@ -46,6 +81,44 @@
         background: url(../../assets/images/bg-journey-top.png) no-repeat;
         pointer-events: none;
         background-size: 100% auto;
+    }
+
+    &:after {
+        background-image: url(../../assets/images/bg-journey-bottom.png);
+        left: auto;
+        right: 0;
+        height: 490px;
+        width: 13%;
+        max-width: 140px;
+    }
+
+    .container {
+
+        &:before {
+            content: '';
+            position: absolute;
+            background: url(../../assets/images/bg-journey-2.png) no-repeat;
+            background-size: 100% auto;
+            left: 0;
+            top: 5%;
+            z-index: 1;
+            width: 11%;
+            height: 190px;
+            width: 7%;
+            max-width: 90px;
+
+            @include media-up(sm) {
+                width: 7%;
+            }
+
+            @include media-up(md) {
+                width: 10%;
+            }
+
+            @include media-up(xl) {
+                width: 13%;
+            }
+        }
     }
 
     .header {

@@ -4,6 +4,10 @@
     color: #fff;
     padding: 70px 20px 40px;
 
+    @include media-down(xs) {
+        font-size: 14px;
+    }
+
     a {
         color: #fff;
         text-decoration: none;

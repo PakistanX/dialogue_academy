@@ -2,29 +2,95 @@
     background: #f99929;
     background-size: 100% auto;
     padding: 10px 0;
+    position: relative;
 
-    .even {
-        flex-direction: row-reverse;
+    &:after,
+    &:before {
+        content: '';
+        position: absolute;
+        top: -3%;
+        left: 0;
+        width: 25%;
+        height: 340px;
+        background: url(../../assets/images/dialogue-4-bg.png) no-repeat;
+        background-size: 100% auto;
+        max-width: 120px;
+        pointer-events: none;
+
+        @include media-up(sm) {
+            width: 13%;
+            top: -6%;
+        }
+
+        @include media-up(md) {
+            width: 9.3%;
+            top: -9%;
+        }
+    }
+
+    &:after {
+        top: 0;
+        left: auto;
+        right: 0;
+        width: 19%;
+        height: 310px;
+        background-image: url(../../assets/images/dialogue-5-bg.png);
+        max-width: 120px;
+
+        @include media-up(sm) {
+            width: 13%;
+        }
+
+        @include media-up(md) {
+            width: 9.3%;
+        }
+    }
+
+    .container {
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: 59%;
+            right: 0;
+            width: 25%;
+            height: 210px;
+            background: url(../../assets/images/dialogue-6-bg.png) no-repeat;
+            background-size: 100% auto;
+            max-width: 120px;
+
+            @include media-up(sm) {
+                width: 13%;
+            }
+
+            @include media-up(md) {
+                width: 9.3%;
+            }
+        }
     }
 
     .header {
         position: relative;
-    }
-
-    .row {
-        margin-bottom: 50px;
+        margin-bottom: 30px;
     }
 
     .text-block {
-        max-width: 436px;
         height: 510px;
         background: url(../../assets/images/dialogue-1-bg.png) no-repeat;
         background-size: 100% auto;
-        font-size: 20px;
+        font-size: 16px;
         display: flex;
         align-items: center;
         justify-content: center;
         margin: 0 auto;
+
+        @include media-up(sm) {
+            font-size: 18px;
+        }
+
+        @include media-up(md) {
+            font-size: 20px;
+        }
 
         .text {
             max-width: 200px;
@@ -32,17 +98,41 @@
         }
     }
 
-    .image-block {
+    .dialogue-1 {
+        padding-top: 48px;
+        height: 355px;
+        max-width: 300px;
 
-        img {
-            display: block;
-            margin: 0 auto;
+        @include media-up(xs) {
+            height: 380px;
+            max-width: 350px;
+        }
+
+        @include media-up(md) {
+            height: 470px;
+            max-width: 435px;
         }
     }
 
     .dialogue-2 {
         background-image: url(../../assets/images/dialogue-2-bg.png);
-        max-width: 470px;
+        padding: 0 50px 42px;
+        height: 350px;
+        max-width: 300px;
+
+        @include media-up(xs) {
+            height: 390px;
+            max-width: 350px;
+            padding: 0 0 60px;
+        }
+        @include media-up(md) {
+            height: 470px;
+            max-width: 470px;
+        }
+
+        @include media-up(lg) {
+            height: 510px;
+        }
 
         .text {
             max-width: 250px;
@@ -51,7 +141,51 @@
 
     .dialogue-3 {
         background-image: url(../../assets/images/dialogue-3-bg.png);
-        max-width: 370px;
-        height: 424px;
+        height: 350px;
+        max-width: 300px;
+
+        @include media-up(xs) {
+            height: 424px;
+            max-width: 370px;
+            padding-bottom: 40px;
+        }
+    }
+
+    .image-block {
+
+        @include media-down(sm) {
+            max-width: 350px;
+            margin: 0 auto;
+        }
+
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+
+    .even {
+        flex-direction: row-reverse;
+
+        .image-block {
+
+            @include media-down(sm) {
+                max-width: 240px;
+            }
+        }
+    }
+
+    .row {
+        position: relative;
+
+        @include media-up(sm) {
+            margin-bottom: 50px;
+        }
+
+        > * {
+            @include media-down(sm) {
+                margin-bottom: 50px;
+            }
+        }
     }
 }
