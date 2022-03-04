@@ -1,0 +1,72 @@
+.text-replacement {
+    display: block;
+    width: 269px;
+    height: 113px;
+    text-indent: -9999px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+
+    &.extend-empathy {
+        background-image: url(../../assets/images/text-extend-empathy.svg);
+        position: absolute;
+        top: 4.2%;
+        left: -50%;
+        max-width: 269px;
+        width: 35%;
+        min-width: 150px;
+        display: none;
+
+        @include media-up(sm) {
+            display: block;
+        }
+
+        @include media-up(lg) {
+            left: -27.9%;
+        }
+
+        @include media-up(xxl) {
+            top: 4.2%;
+            left: -40.9%;
+        }
+    }
+
+    &.feel-heard {
+        max-width: 210px;
+        height: 125px;
+        background-image: url(../../assets/images/text-feel-heard.svg);
+        position: absolute;
+        top: 26.9%;
+        width: 40%;
+        right: -50.1%;
+        display: none;
+
+        @include media-up(sm) {
+            display: block;
+        }
+
+        @include media-up(lg) {
+            width: 32%;
+            right: -32.1%;
+        }
+
+        @include media-up(xxl) {
+            width: 26%;
+        }
+    }
+
+    &.text-values {
+        background-image: url(../../assets/images/text-values.png);
+        max-width: 440px;
+        height: 160px;
+        width: auto;
+        margin: 0 auto 50px;
+    }
+
+    &.text-time-commitment {
+        background-image: url(../../assets/images/text-time-commitment.png);
+        width: 100%;
+        height: 185px;
+        margin-bottom: 50px;
+    }
+}

@@ -1,0 +1,57 @@
+.dialogue {
+    background: #f99929;
+    background-size: 100% auto;
+    padding: 10px 0;
+
+    .even {
+        flex-direction: row-reverse;
+    }
+
+    .header {
+        position: relative;
+    }
+
+    .row {
+        margin-bottom: 50px;
+    }
+
+    .text-block {
+        max-width: 436px;
+        height: 510px;
+        background: url(../../assets/images/dialogue-1-bg.png) no-repeat;
+        background-size: 100% auto;
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+
+        .text {
+            max-width: 200px;
+            text-align: center;
+        }
+    }
+
+    .image-block {
+
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+
+    .dialogue-2 {
+        background-image: url(../../assets/images/dialogue-2-bg.png);
+        max-width: 470px;
+
+        .text {
+            max-width: 250px;
+        }
+    }
+
+    .dialogue-3 {
+        background-image: url(../../assets/images/dialogue-3-bg.png);
+        max-width: 370px;
+        height: 424px;
+    }
+}

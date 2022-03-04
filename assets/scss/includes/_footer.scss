@@ -1,0 +1,31 @@
+#footer {
+    text-align: center;
+    background: #f99929;
+    color: #fff;
+    padding: 70px 20px 40px;
+
+    a {
+        color: #fff;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        li {
+            margin-bottom: 20px;
+        }
+    }
+
+    .logo {
+        max-width: 200px;
+        display: block;
+        margin: 0 auto 20px;
+    }
+}

@@ -1,0 +1,75 @@
+.header {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 100px 20px 0;
+
+    h2 {
+        display: inline-block;
+        vertical-align: top;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.4;
+
+        @include media-up(sm) {
+            font-size: 23px;
+        }
+        @include media-up(md) {
+            font-size: 27px;
+        }
+        @include media-up(lg) {
+            font-size: 30px;
+        }
+
+        strong {
+            display: block;
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 1;
+
+            @include media-up(sm) {
+                font-size: 28px;
+            }
+            @include media-up(md) {
+                font-size: 35px;
+            }
+            @include media-up(lg) {
+                font-size: 40px;
+            }
+        }
+
+        .text {
+            box-shadow: 0 3px 22px rgba(0, 0, 0, 0.16);
+            border-radius: 10px;
+            padding: 15px 20px;
+            background: #fff;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            position: relative;
+            min-height: 80px;
+
+            @include media-up(sm) {
+                min-height: 90px;
+            }
+            @include media-up(md) {
+                min-height: 102px;
+            }
+            @include media-up(lg) {
+                min-height: 112px;
+            }
+
+            &:after {
+                content: '';
+                position: absolute;
+                top: 100%;
+                left: 20px;
+                right: 20px;
+                height: 10px;
+                background: #f26a39;
+                border-radius: 0 0 20px 20px;
+                box-shadow: 0 3px 22px rgba(0, 0, 0, 0.16);
+            }
+        }
+    }
+}

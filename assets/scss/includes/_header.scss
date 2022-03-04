@@ -1,0 +1,108 @@
+#header {
+    background: #fff;
+    box-shadow: 0 3px 18px rgba(0, 0, 0, 0.102);
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 99;
+
+    @include media-up(xxl) {
+        padding: 0 6.35%;
+    }
+
+    .navbar-nav {
+        @include media-up(md) {
+            flex-grow: 1;
+            align-items: center;
+        }
+
+        .nav-item {
+
+            &:first-child {
+
+                @include media-up(md) {
+                    margin-left: auto;
+                }
+            }
+        }
+    }
+
+    .browse-courses-li {
+
+        @include media-up(md) {
+            margin-left: auto;
+        }
+
+        .browse-courses {
+            color: $info;
+            display: block;
+
+            &:hover {
+                color: #fff;
+            }
+        }
+    }
+}
+
+.navbar-brand {
+    padding: 0;
+
+    img {
+        width: 94px;
+        height: auto;
+    }
+}
+
+.navbar {
+    max-width: 1250px;
+    margin: 0 auto;
+
+    @include media-up(xxl) {
+        max-width: 1500px;
+    }
+
+    .navbar-nav {
+        padding-top: 20px;
+
+        @include media-up(md) {
+            font-size: 14px;
+            padding-top: 0;
+        }
+
+        @include media-up(lg) {
+            font-size: 15px;
+        }
+
+        @include media-up(xl) {
+            font-size: 18px;
+        }
+
+        .nav-link {
+            text-transform: uppercase;
+            font-weight: 500;
+            color: $black;
+            padding: 3px 10px;
+
+            @include media-up(xxl) {
+                padding: 3px 23px;
+            }
+
+            &:hover,
+            &.active {
+                color: $theme-green;
+            }
+
+            &.external {
+                color: $theme-green;
+                font-weight: 400;
+
+                &:hover {
+
+                    span {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}

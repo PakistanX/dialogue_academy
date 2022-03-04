@@ -1,0 +1,59 @@
+.start-journey {
+    background: #0ba699;
+    position: relative;
+
+    &:before {
+        content: '';
+        position: absolute;
+        height: 232px;
+        width: 100%;
+        top: -1px;
+        left: 0;
+        pointer-events: none;
+        background: url(../../assets/images/bg-journey.png) no-repeat;
+        background-size: 100% auto;
+    }
+
+    .header {
+        margin-bottom: 150px;
+
+        @include media-up(xxl) {
+            margin-bottom: 200px;
+        }
+    }
+
+    .partners-school {
+        margin: -200px 0 -300px;
+    }
+}
+
+.continue-journey {
+    background: $theme-offwhite;
+    padding: 0 0 100px;
+    position: relative;
+
+    @include media-up(sm) {
+        padding: 50px 0 100px;
+    }
+
+    &:before {
+        content: '';
+        position: absolute;
+        height: 232px;
+        width: 100%;
+        top: -1px;
+        left: 0;
+        background: url(../../assets/images/bg-journey-top.png) no-repeat;
+        pointer-events: none;
+        background-size: 100% auto;
+    }
+
+    .header {
+        margin-bottom: 50px;
+    }
+
+    .frame {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+}
