@@ -12,7 +12,7 @@
         left: 0;
         width: 25%;
         height: 340px;
-        background: url(../../assets/images/dialogue-4-bg.png) no-repeat;
+        background: url(../../assets/images/dialogue-4-bg.png?v=#{$verion}) no-repeat;
         background-size: 100% auto;
         max-width: 120px;
         pointer-events: none;
@@ -34,7 +34,7 @@
         right: 0;
         width: 19%;
         height: 310px;
-        background-image: url(../../assets/images/dialogue-5-bg.png);
+        background-image: url(../../assets/images/dialogue-5-bg.png?v=#{$verion});
         max-width: 120px;
 
         @include media-up(sm) {
@@ -55,7 +55,7 @@
             right: 0;
             width: 25%;
             height: 210px;
-            background: url(../../assets/images/dialogue-6-bg.png) no-repeat;
+            background: url(../../assets/images/dialogue-6-bg.png?v=#{$verion}) no-repeat;
             background-size: 100% auto;
             max-width: 120px;
 
@@ -76,7 +76,7 @@
 
     .text-block {
         height: 510px;
-        background: url(../../assets/images/dialogue-1-bg.png) no-repeat;
+        background: url(../../assets/images/dialogue-1-bg.png?v=#{$verion}) no-repeat;
         background-size: 100% auto;
         font-size: 16px;
         display: flex;
@@ -115,7 +115,7 @@
     }
 
     .dialogue-2 {
-        background-image: url(../../assets/images/dialogue-2-bg.png);
+        background-image: url(../../assets/images/dialogue-2-bg.png?v=#{$verion});
         padding: 0 50px 42px;
         height: 350px;
         max-width: 300px;
@@ -140,7 +140,7 @@
     }
 
     .dialogue-3 {
-        background-image: url(../../assets/images/dialogue-3-bg.png);
+        background-image: url(../../assets/images/dialogue-3-bg.png?v=#{$verion});
         height: 350px;
         max-width: 300px;
 

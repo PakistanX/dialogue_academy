@@ -8,7 +8,7 @@
     background-size: 100% auto;
 
     &.extend-empathy {
-        background-image: url(../../assets/images/text-extend-empathy.svg);
+        background-image: url(../../assets/images/text-extend-empathy.svg?v=#{$verion});
         position: absolute;
         top: 4.2%;
         left: -50%;
@@ -34,7 +34,7 @@
     &.feel-heard {
         max-width: 210px;
         height: 125px;
-        background-image: url(../../assets/images/text-feel-heard.svg);
+        background-image: url(../../assets/images/text-feel-heard.svg?v=#{$verion});
         position: absolute;
         top: 26.9%;
         width: 40%;
@@ -56,7 +56,7 @@
     }
 
     &.text-values {
-        background-image: url(../../assets/images/text-values.png);
+        background-image: url(../../assets/images/text-values.png?v=#{$verion});
         max-width: 440px;
         width: auto;
         margin: 0 auto 50px;
@@ -65,7 +65,7 @@
     }
 
     &.text-time-commitment {
-        background-image: url(../../assets/images/text-time-commitment.png);
+        background-image: url(../../assets/images/text-time-commitment.png?v=#{$verion});
         width: 100%;
         padding-top: 29%;
         height: auto;

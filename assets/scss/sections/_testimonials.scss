@@ -1,5 +1,5 @@
 .testimonials {
-    background: $theme-offwhite url(../../assets/images/bg-testimonials.png) no-repeat 0 100%;
+    background: $theme-offwhite url(../../assets/images/bg-testimonials.png?v=#{$verion}) no-repeat 0 100%;
     background-size: 100% auto;
     padding: 0 0 50px;
 
@@ -89,7 +89,7 @@
         &:before {
             content: '';
             position: absolute;
-            background: url(../../assets/images/quote-left.png) no-repeat;
+            background: url(../../assets/images/quote-left.png?v=#{$verion}) no-repeat;
             background-size: 100% auto;
             width: 40px;
             height: 40px;
@@ -103,7 +103,7 @@
         }
 
         &:after {
-            background-image: url(../../assets/images/quote-right.png);
+            background-image: url(../../assets/images/quote-right.png?v=#{$verion});
             top: auto;
             left: auto;
             bottom: 0;

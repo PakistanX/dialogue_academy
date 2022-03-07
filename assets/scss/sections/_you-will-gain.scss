@@ -10,7 +10,7 @@
          left: 0;
          height: 160px;
          pointer-events: none;
-         background: url(../../assets/images/bg-gain-3.png) no-repeat;
+         background: url(../../assets/images/bg-gain-3.png?v=#{$verion}) no-repeat;
          background-size: 100% auto;
          width: 95px;
      }
@@ -54,7 +54,7 @@
             height: 304px;
             width: 8%;
             pointer-events: none;
-            background: url(../../assets/images/bg-gain-1.png) no-repeat;
+            background: url(../../assets/images/bg-gain-1.png?v=#{$verion}) no-repeat;
             background-size: 100% auto;
             max-width: 95px;
 
@@ -73,7 +73,7 @@
         }
 
         &:after {
-            background-image: url(../../assets/images/bg-gain-2.png);
+            background-image: url(../../assets/images/bg-gain-2.png?v=#{$verion});
             max-width: 90px;
             top: 60%;
             left: auto;

@@ -1,5 +1,5 @@
 .time-and-commitment {
-    background: $theme-offwhite url(../../assets/images/bg-time-commitment.png) no-repeat;
+    background: $theme-offwhite url(../../assets/images/bg-time-commitment.png?v=#{$verion}) no-repeat;
     background-size: 100% auto;
 
     .header {

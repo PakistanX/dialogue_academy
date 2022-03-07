@@ -6,7 +6,7 @@
     align-items: center;
 
     &:after {
-        background: $theme-offwhite url(../../assets/images/banner-bg.png) no-repeat 0 100%;
+        background: $theme-offwhite url(../../assets/images/banner-bg.png?v=#{$verion}) no-repeat 0 100%;
         background-size: 100% auto;
         pointer-events: none;
         content: '';

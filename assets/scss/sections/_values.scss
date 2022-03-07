@@ -21,12 +21,12 @@
             left: 0;
             height: 304px;
             width: 100%;
-            background: url(../../assets/images/banner-bg-bottom.png) no-repeat;
+            background: url(../../assets/images/banner-bg-bottom.png?v=#{$verion}) no-repeat;
             background-size: 100% auto;
         }
 
         &:after {
-            background-image: url(../../assets/images/value-bg-3.png);
+            background-image: url(../../assets/images/value-bg-3.png?v=#{$verion});
             max-width: 90px;
             top: 84%;
             z-index: 1;
@@ -49,7 +49,7 @@
     &:after,
     &:before {
         content: '';
-        background: url(../../assets/images/value-bg-1.png) no-repeat;
+        background: url(../../assets/images/value-bg-1.png?v=#{$verion}) no-repeat;
         background-size: 100% auto;
         position: absolute;
         height: 245px;
@@ -70,7 +70,7 @@
     }
 
     &:after {
-        background-image: url(../../assets/images/value-bg-2.png);
+        background-image: url(../../assets/images/value-bg-2.png?v=#{$verion});
         height: 299px;
         width: 12%;
         top: 2%;
@@ -126,9 +126,7 @@
 }
 
 .values-list {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+    @include list();
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
